@@ -1,0 +1,188 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: light;
+}
+
+/*.logo {
+    width: 100px;
+    height: 70px;
+    
+}*/
+
+
+
+
+.logo {
+    height: 70px;
+    width: 100px;
+    /* adjust height to fit navbar */
+    margin-top: -25px;
+    /* slight vertical center */
+    margin-bottom: 5px;
+}
+
+.navbar-fixed-top {
+    min-height: 80px;
+}
+
+nav {
+
+    margin-top: 0px;
+    padding: 10px;
+    text-align: left;
+
+}
+
+nav ul li {
+    list-style: none;
+    display: inline;
+    margin-left: 0px;
+    /*margin-right: 50px;*/
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-weight: bolder;
+    color: black;
+    padding: 10px 15px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+    border: 2px solid #007bff;
+    background-color: #e6f0ff;
+    color: #007bff;
+}
+
+
+
+.container {
+    display: flex;
+    /*margin: 100px;*/
+    margin-top: 100px;
+}
+
+.category {
+    width: 20%;
+    background-color: white;
+    padding: 20px;
+    border-right: 1px solid black;
+}
+
+.category h1 {
+    font-size: 25px;
+    border-bottom: 2px solid black;
+    padding-bottom: 10px;
+}
+
+.category ul {
+    list-style: none;
+    padding: 0;
+    margin-right: 20px;
+}
+
+.category ul li {
+
+    padding: 10px 0;
+    border-bottom: 1px solid black;
+}
+
+.category ul li:hover {
+    background-color: black;
+    color: white;
+
+}
+
+.banner {
+    width: 1000px;
+}
+
+
+
+/* aita holo login modal er  css suru */
+.modal-content {
+
+    border-radius: 10px;
+    width: 370px;
+
+
+
+}
+
+.modal-header {
+    background-color: #4CAF50;
+    color: white;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    text-align: center;
+}
+
+.modal-body {
+    padding: 25px;
+    border-radius: 10px;
+    width: 350px;
+}
+
+.form-group label {
+    font-weight: bold;
+}
+
+.btn-login {
+    width: 100%;
+}
+
+.extra-links {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.extra-links a {
+    margin: 0 10px;
+}
+
+/* aita holo login modal er  css ses */
+
+
+/* Modal style based on .registration */
+
+
+.registration .modal-content {
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    width: 500px;
+}
+
+.registration .modal-header {
+    background-color: #4CAF50;
+    color: white;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    text-align: center;
+}
+
+.registration .modal-body {
+    padding: 25px;
+    width: 490px;
+}
+
+.registration input,
+.registration select {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.registration label {
+    font-weight: bold;
+}
+
+.registration .btn-success {
+    width: 100%;
+    border-radius: 5px;
+}

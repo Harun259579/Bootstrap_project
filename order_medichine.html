@@ -1,0 +1,62 @@
+<style>
+  body {
+    background-color: #f7f9fc;
+  }
+
+  .order-form {
+    max-width: 650px;
+    margin: 40px auto;
+    padding: 25px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .form-label {
+    font-weight: bold;
+  }
+
+  .mb-3 {
+    margin-bottom: 20px;
+  }
+
+  .w-100 {
+    width: 100%;
+  }
+</style>
+
+
+<!-- Order Medicine Form -->
+<div class="order-form" style="margin-top: 150px;">
+  <div style="background-color: #2870a7; padding: 15px 20px; border-radius: 10px 10px 0 0;">
+    <h3 class="text-center" style="color: white; margin: 0;">Order Your Medicine</h3>
+  </div>
+  <form>
+    <div class="form-group mb-3">
+      <label for="fullname" class="form-label">Full Name</label>
+      <input type="text" class="form-control" id="fullname" placeholder="Enter your name" required>
+    </div>
+
+    <div class="form-group mb-3">
+      <label for="medicineName" class="form-label">Medicine Name</label>
+      <input type="text" class="form-control" id="medicineName" placeholder="Enter medicine name" required>
+    </div>
+
+    <div class="form-group mb-3">
+      <label for="quantity" class="form-label">Quantity</label>
+      <input type="number" class="form-control" id="quantity" min="1" placeholder="Enter quantity" required>
+    </div>
+
+    <div class="form-group mb-3">
+      <label for="deliveryAddress" class="form-label">Delivery Address</label>
+      <textarea class="form-control" id="deliveryAddress" rows="3" placeholder="Enter your address" required></textarea>
+    </div>
+
+    <div class="form-group mb-3">
+      <label for="phone" class="form-label">Phone Number</label>
+      <input type="tel" class="form-control" id="phone" placeholder="e.g. 017xxxxxxxx" required>
+    </div>
+
+    <button type="submit" class="btn btn-info w-100">Place Order</button>
+  </form>
+</div>

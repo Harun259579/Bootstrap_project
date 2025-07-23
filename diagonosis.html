@@ -1,0 +1,70 @@
+<style>
+  body {
+    background-color: #f0f8ff;
+  }
+
+  .diagnosis-section {
+    padding: 50px 20px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    margin-top: 40px;
+  }
+
+  .form-label {
+    font-weight: bold;
+  }
+
+  .w-100 {
+    width: 100%;
+  }
+</style>
+
+
+
+
+<!-- Home Diagnosis Form -->
+
+<div class="container diagnosis-section" style="margin-top: 150px;">
+
+  <form>
+    <div style="background-color: #2870a7; padding: 15px 20px; border-radius: 10px 10px 0 0;">
+      <h3 class="text-center" style="color: white; margin: 0;">Home Diagonosis Request</h3>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="form-group">
+          <label for="fullname" class="form-label">Full Name</label>
+          <input type="text" class="form-control" id="fullname" placeholder="Your name" required>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group">
+          <label for="phone" class="form-label">Phone Number</label>
+          <input type="tel" class="form-control" id="phone" placeholder="017xxxxxxx" required>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group">
+          <label for="symptoms" class="form-label">Symptoms</label>
+          <input type="text" class="form-control" id="symptoms" placeholder="Fever, Headache etc" required>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group">
+          <label for="date" class="form-label">Preferred Date</label>
+          <input type="date" class="form-control" id="date" required>
+        </div>
+      </div>
+      <div class="col-md-12">
+        <div class="form-group">
+          <label for="address" class="form-label">Home Address</label>
+          <textarea class="form-control" id="address" rows="3" placeholder="Enter your address" required></textarea>
+        </div>
+      </div>
+      <div class="col-md-12">
+        <button type="submit" class="btn btn-info w-100">Request Diagnosis</button>
+      </div>
+    </div>
+  </form>
+</div>

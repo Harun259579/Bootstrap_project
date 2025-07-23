@@ -1,0 +1,66 @@
+<style>
+  body {
+    background-color: #f5faff;
+  }
+
+
+
+  .consult-box {
+    max-width: 650px;
+    margin: 40px auto;
+    background: white;
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  }
+
+  .form-label {
+    font-weight: bold;
+  }
+
+  .w-100 {
+    width: 100%;
+  }
+
+  .mb-3 {
+    margin-bottom: 20px;
+  }
+</style>
+
+
+
+
+<!-- Consultation Form -->
+<div class="consult-box" style="margin-top: 150px;">
+  <div style="background-color: #2870a7; padding: 15px 20px; border-radius: 10px 10px 0 0;">
+    <h3 class="text-center" style="color: white; margin: 0;">Book a Consultation</h3>
+  </div>
+  <form>
+    <div class="form-group mb-3">
+      <label for="name" class="form-label">Full Name</label>
+      <input type="text" class="form-control" id="name" placeholder="Your name" required>
+    </div>
+    <div class="form-group mb-3">
+      <label for="email" class="form-label">Email address</label>
+      <input type="email" class="form-control" id="email" placeholder="you@example.com" required>
+    </div>
+    <div class="form-group mb-3">
+      <label for="consultType" class="form-label">Consultation Type</label>
+      <select class="form-control" id="consultType" required>
+        <option selected disabled>Select type</option>
+        <option value="online">Online</option>
+        <option value="in_person">In-person</option>
+      </select>
+    </div>
+    <div class="form-group mb-3">
+      <label for="date" class="form-label">Preferred Date</label>
+      <input type="date" class="form-control" id="date" required>
+    </div>
+    <div class="form-group mb-3">
+      <label for="symptoms" class="form-label">Describe Your Issue</label>
+      <textarea class="form-control" id="symptoms" rows="4" placeholder="Briefly describe your health concern..."
+        required></textarea>
+    </div>
+    <button type="submit" class="btn btn-info w-100">Book Consultation</button>
+  </form>
+</div>

@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" href="style.css">
+
+  <title>
+    Doctors Appoined
+  </title>
+  <script src="script.js"></script>
+</head>
+
+<body>
+
+  <!-- here top nab bar hulor kaj kora hoyeca -->
+
+
+
+
+
+
+
+  <header>
+    <nav class="navbar navbar-expand-lg  navbar-fixed-top  mt-0" style="background-color: white;">
+      <p style="background-color: white;
+    color: red;
+    text-align: center;
+    padding: 10px 0px;
+    font-size: 14px;
+    border-bottom: 1px solid black;">Have Any Question? Call us at +088 01730229408</p>
+      <div style="position: absolute; float: left;
+    text-decoration: none;top: 30px;right: 20px;margin-top: -10px;">
+        <a href="#" data-toggle="modal" data-target="#loginModal">Sign In </a> | <a href="" data-toggle="modal"
+          data-target="#regModal"> Sign Up</a>
+      </div>
+      <div class="container-fluid">
+
+        <!-- Logo and toggle button -->
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">
+            <img src="image/3.jpg" alt="Not Found" class="logo">
+          </a>
+        </div>
+
+        <!-- Navbar Links and Search -->
+        <div class="collapse navbar-collapse" id="mainNavbar">
+          <ul class="nav navbar-nav">
+            <li><a href="Doctors_appoined.html">Home</a></li>
+            <li><a href="#" onclick="consultasion()">Consultation</a></li>
+            <li><a href="#" onclick="ordermedichine()">Order Medichine</a></li>
+            <li><a href="#" onclick="diagnosis()">Home Diagonostic</a></li>
+            <li><a href="#" onclick="healtplan()">Health Plan</a></li>
+            <li><a href="#" onclick="about()">About</a></li>
+
+          </ul>
+
+          <!-- Search box after menu -->
+          <form class="navbar-form navbar-right" role="search">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Search" style="width: 300px;">
+            </div>
+            <button type="submit" class="btn btn-success btn">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar End -->
+
+  </header>
+
+
+
+
+
+
+
+
+
+  <div id="maincontent">
+
+    <div class="container">
+
+      <aside class="category"> <!-- side bar ar kaj akhane ase -->
+        <h1>Our Services</h1>
+        <ul>
+          <li>Home</li>
+          <li> Consultation</li>
+          <li> Order Medichine</li>
+          <li> Home Diagonostic </li>
+          <li>Health Plan</li>
+          <li>About</li>
+
+        </ul>
+      </aside>
+      <!-- akhane slider ba Carosul ar kaj kora ase -->
+      <section class="banner ">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner">
+
+            <div class="item active">
+              <img src="image/9.jpg" alt="Los Angeles" style="width:100%;">
+            </div>
+
+            <div class="item">
+              <img src="image/8.jpg" alt="Chicago" style="width:100%;">
+            </div>
+
+            <div class="item">
+              <img src="image/7.jpg" alt="New York" style="width:100%;">
+            </div>
+            <div class="item">
+              <img src="image/5.jpg" alt="New York" style="width:100%;">
+            </div>
+
+          </div>
+
+          <!-- Left and right controls -->
+          <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </section>
+    </div>
+
+
+    <!-- card use kore service gulor kaj kora ase -->
+    <div class="row" style="margin-top: 30px;">
+      <div class="col-sm-2">
+        <div class="card" style="width:200px;">
+
+          <img src="image/1.jpg" class="card-img-top" style="width: 100%; height: 200px; border-radius: 5px;">
+
+          <div class="card-body">
+            <h4 class="card-title"><b>Live Consultation</b></h4>
+            <p class="card-text">Get Video consultation or Schedule your Appointment.</p>
+          </div>
+          <div class="card-footer">
+            <a href="#" class="btn btn-success stretched-link">Appoinment</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-2">
+        <div class="card" style="width:200px;">
+
+          <img src="image/10.jpg" class="card-img-top " style="width: 100%;height: 200px;border-radius: 5px;">
+
+          <div class="card-body">
+            <h4 class="card-title"><b>Order Medichine</b></h4>
+            <p class="card-text">Order Esily and Get Medichine in 1 Hour.</p>
+          </div>
+          <div class="card-footer ">
+            <a href="#" class="btn btn-success stretched-link">Order Now</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-2">
+        <div class="card " style="width:200px;">
+
+          <img src="image/11.jpg" class="card-img-top " style="width: 100%;height: 200px;border-radius: 5px;">
+
+          <div class="card-body">
+            <h4 class="card-title"><b>Diagonosis Test</b></h4>
+            <p class="card-text">Get Video consultation or Schedule your Appointment.</p>
+          </div>
+          <div class="card-footer">
+            <a href="#" class="btn btn-success stretched-link">Test</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-2">
+        <div class="card " style="width:200px;">
+
+          <img src="image/12.jpg" class="card-img-top " style="width: 100%;height: 200px;border-radius: 5px;">
+
+          <div class="card-body">
+            <h4 class="card-title"><b>Health Care</b></h4>
+            <p class="card-text">consultation,Health Checkup , Insurance and more</p>
+          </div>
+          <div class="card-footer">
+            <a href="#" class="btn btn-success stretched-link">click Here</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-2">
+        <div class="card " style="width:200px;">
+
+          <img src="image/13.jpg" class="card-img-top " style="width: 100%;height: 200px;border-radius: 5px;">
+
+          <div class="card-body">
+            <h4 class="card-title"><b>IT Solution</b></h4>
+            <p class="card-text">Our Expert Engineer Solved ur health tech Problem</p>
+          </div>
+          <div class="card-footer">
+            <a href="#" class="btn btn-success stretched-link">IT Solution</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-2">
+        <div class="card " style="width:200px;">
+
+          <img src="image/14.jpg" class="card-img-top " style="width: 100%;height: 200px;border-radius: 5px;">
+
+          <div class="card-body">
+            <h4 class="card-title"><b>Care Global</b></h4>
+            <p class="card-text">Quality and Hassle free Health care Aboard.</p>
+          </div>
+          <div class="card-footer">
+            <a href="#" class="btn btn-success stretched-link">Global Service</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <!-- card use kore achievment and customer support gulor kaj kora ase -->
+    <div class="row" style="background: lightblue; margin-top:20px;">
+      <div class="col-sm-2">
+        <div class="card" style="width:200px; margin-left: 70px;margin-top: 10px;">
+
+          <img src="image/15.jpg" class="card-img-top" style="width: 100%; height: 200px; border-radius: 100px;">
+
+          <div class="card-body" style="text-align: center;">
+            <h4 class="card-title"><b>10 Minutes</b></h4>
+            <p class="card-text">Average Consultation Waiting Time</p>
+          </div>
+
+        </div>
+      </div>
+      <div class="col-sm-2">
+        <div class="card" style="width:200px;margin-left: 70px;margin-top: 10px;">
+
+          <img src="image/16.jpg" class="card-img-top " style="width: 100%;height: 200px;border-radius: 100px;">
+
+          <div class="card-body" style="text-align:center;">
+            <h4 class="card-title"><b>4M+</b></h4>
+            <p class="card-text">People Under Avarage Coverage</p>
+          </div>
+
+        </div>
+      </div>
+      <div class="col-sm-2">
+        <div class="card " style="width:200px;margin-left: 70px;margin-top: 10px;">
+
+          <img src="image/17.jpg" class="card-img-top " style="width: 100%;height: 200px;border-radius: 100px;">
+
+          <div class="card-body" style="text-align:center;">
+            <h4 class="card-title"><b>561K+</b></h4>
+            <p class="card-text">Video consultation Suceccesfully Completed</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-2">
+        <div class="card " style="width:200px;margin-left: 70px;margin-top: 10px;">
+
+          <img src="image/18.jpg" class="card-img-top " style="width: 100%;height: 200px;border-radius: 100px;">
+
+          <div class="card-body" style="text-align:center;">
+            <h4 class="card-title"><b>95%</b></h4>
+            <p class="card-text">Customers Gave 5 Star Rating</p>
+          </div>
+
+        </div>
+      </div>
+      <div class="col-sm-2">
+        <div class="card " style="width:200px;margin-left: 70px;margin-top: 10px;">
+
+          <img src="image/19.jpg" class="card-img-top " style="width: 100%;height: 200px;border-radius: 100px;">
+
+          <div class="card-body" style="text-align:center;">
+            <h4 class="card-title"><b>1+ Million </b></h4>
+            <p class="card-text">App Download in Playstore</p>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+
+
+
+    <!-- akhane body te picture and why health qsn ar kaj kora ase -->
+
+    <div class="row" style="margin-top:20px;">
+      <div class="col-sm-6">
+        <div class="card" style="width:600px; margin-left: 70px;margin-top: 10px;">
+
+          <img src="image/12.jpg" class="card-img-top" style="width: 100%; height: 300px; border-radius: 10px;">
+
+        </div>
+      </div>
+      <div class="col-sm-5">
+        <div class="card" style="width:100%;margin-left: 70px;margin-top: 10px;">
+
+
+
+          <div class="card-body">
+            <h4 class="card-title"><b>Why Health Care..?</b></h4>
+            <p class="card-text" style="text-align:justify;">Health care is one of the most important fields in the
+              world. It allows us to help people live longer, healthier lives. By working in health care, we can care
+              for others, support our communities, and make a real difference in people’s lives.
+
+              It is a growing field full of opportunities — from treating patients to building new technologies that
+              improve health. Health care is not just a profession; it’s a mission to serve, heal, and bring hope.</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- akhane have any qsn ar kaj kora hoise using accordion -->
+    <div>
+      <h1 style="text-align:center;"><b>Have Any Questions.....?</b></h1>
+      <h3 style="width: 1000px;margin-left: 150px;">Find below our frequently asked questions. If you have other
+        questions please contact us.</h3>
+    </div>
+
+    <!-- Accordion ar kaj text hide thake click korla show kre -->
+    <div class="container content">
+      <div class="row mt-3">
+        <div col-lg-4>
+          <div class="accordion" id="accordionexample">
+            <div class="card">
+              <div class="card-header" id="headingone">
+                <h2 class="mb-0">
+                  <button class="btn btn-outline-success btn-block text-left" type="button" data-toggle="collapse"
+                    data-target="#collapseone" style="width: 1000px;margin-left: 100px;text-align: left;"><b>What do We
+                      Treat...?</b>
+                  </button>
+                </h2>
+
+              </div>
+              <div id="collapseone" class="collapse" data-parent="#accordionexample">
+                <div class="card-body">
+                  <p class="text-justify" style="width: 1000px;margin-left: 100px;">
+                    Common health issue Ask anything you would normally ask your GP. You can have an instant video with
+                    one of our GPs via a digital consultation from anywhere, at any time of day. Specialist advice
+                    Sometimes it's helpful to see a specialist when you want. And get educational advice, pre-screening,
+                    monitoring and follow-ups. For maternal and infant health care, chronic diseases such as diabetes,
+                    or other conditions, DocTime can help you to connect with the right specialist doctor and to stay
+                    healthy. More than 20 different specialities are available on DocTime. Mental health and wellbeing
+                    In a fast paced world, it is important to monitor and protect your mental health and wellbeing.
+                    Doctors can help you stay healthy whether you have symptoms at home or in your workplace of stress,
+                    smoking, anxiety, bereavement or depression.<code>show</code></p>
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="card">
+              <div class="card-header" id="headingotwo">
+                <h2 class="mb-0">
+                  <button class="btn btn-outline-success btn-block text-left" type="button" data-toggle="collapse"
+                    data-target="#collapsetwo" style="width: 1000px;margin-left: 100px;text-align: left;"><b>How does it
+                      Work..?</b>
+                  </button>
+                </h2>
+
+              </div>
+              <div id="collapsetwo" class="collapse" data-parent="#accordionexample">
+                <div class="card-body">
+                  <p class="text-justify" style="width: 1000px;margin-left: 100px;">
+                    You can register on our App and access several medical services easily. The basic video consultation
+                    service is straightforward: search for your relevant doctor with easy filters, talk to your doctor
+                    directly as included in your DocTime healthcare package or pay just prior the on-demand consultation
+                    starts. Then access your prescription uploaded by the doctor and you can order medicine or tests as
+                    recommended. Keep in touch with the doctor and use medicine reminders until your feel completely
+                    healthy again. Access plenty of other medical services including your personal Electronic Patient
+                    Record and health tips at any time through our homepage
+                    <code>show</code>
+                  </p>
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="card">
+              <div class="card-header" id="headingthree">
+                <h2 class="mb-0">
+                  <button class="btn btn-outline-success btn-block text-left" type="button" data-toggle="collapse"
+                    data-target="#collapsethree" style="width: 1000px;margin-left: 100px;text-align: left;"><b>Are the
+                      registered Doctors Verified..?</b>
+                  </button>
+                </h2>
+
+              </div>
+              <div id="collapsethree" class="collapse" data-parent="#accordionexample">
+                <div class="card-body">
+
+                  <p class="text-justify" style="width: 1000px;margin-left: 100px;">
+                    Yes, all our panel of doctors are verified. We verify their registration with BMDC, we also check
+                    doctors national id / passport with selfie to make sure the qualified doctors are getting
+                    registered.<code>show</code></p>
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+    <!-- akhane page ar sathe contract ar kaj tuku kora ase -->
+    <div style="background-color: lightblue; height: 300px;">
+      <h1 style="text-align:center;margin-top: 10px;"><b>Get in Touch with US</b></h1>
+      <h3 style="width: 1000px;margin-left: 150px;">We're here to help. Send your query or question below and provide us
+        with as much detail as possible. We will answer your query as soon as possible. We aim to reply to your query
+        within 24 hours.</h3>
+
+
+    </div>
+    <div>
+      <form class="formcontent" style="text-align: left;
+      padding: 30px;
+      margin: auto;
+      width: 700px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0,0.1);
+      margin-top:-150px;
+      background-color: white;
+      border-radius: 5px;">
+        <div>
+
+          <input type="text" name="name" class="form-group form-control" placeholder="Enter Your Name" required
+            style="width:600px;margin-left: 20px;">
+
+
+          <input type="email Number" name="emailnumber" class="form-group form-control"
+            placeholder="E-mail or Phone Number" required style="width:600px;margin-left: 20px;">
+        </div>
+        <div>
+          <input type="text" name="concern" class="form-group form-control" placeholder="What is Your Concerns."
+            required style="width:600px;margin-left: 20px;">
+        </div>
+        <div>
+          <textarea type="text" name="text" class="form-group form-control" placeholder="Whats Your Query.?" required
+            rows="3" style="width:600px;margin-left: 20px;"></textarea>
+        </div>
+
+        <button class="btn btn-success" style="width:100px;margin-left: 20px;">Submit</button>
+
+      </form>
+    </div>
+
+  </div>
+
+
+
+
+  <!-- Footer -->
+  <footer class="text-white pt-4 pb-2" style="background-color: lightblue;">
+    <div class="container text-md-start text-center">
+      <div class="row">
+
+        <!-- About -->
+        <div class="col-md-3 mb-4">
+          <h5 class="text-uppercase fw-bold">Medical Care</h5>
+          <p>
+            We provide reliable and quality services to our clients across the globe.
+          </p>
+        </div>
+
+        <!-- Links -->
+        <div class="col-md-3 mb-4">
+          <h6 class="text-uppercase fw-bold">Quick Links</h6>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-white text-decoration-none">Consultation</a></li>
+            <li><a href="#" class="text-white text-decoration-none">Home Diagonosis</a></li>
+            <li><a href="#" class="text-white text-decoration-none">Order Medichine</a></li>
+            <li><a href="#" class="text-white text-decoration-none">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Services -->
+        <div class="col-md-3 mb-4">
+          <h6 class="text-uppercase fw-bold">Services</h6>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-white text-decoration-none">Consultation</a></li>
+            <li><a href="#" class="text-white text-decoration-none">Order Medichine</a></li>
+            <li><a href="#" class="text-white text-decoration-none">Home Diagonostic</a></li>
+            <li><a href="#" class="text-white text-decoration-none">Health Plan</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact -->
+        <div class="col-md-3 mb-4">
+          <h6 class="text-uppercase fw-bold">Contact</h6>
+          <p>Email: mdc234@gmail.com</p>
+          <p>Phone: +880 1234-567890</p>
+          <p>Address: Dhaka, Bangladesh</p>
+        </div>
+      </div>
+
+      <hr class="border-light">
+
+      <div class="text-center">
+        &copy; 2025 Medical Care. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+
+  </div>
+</body>
+<!-------------login modal start--------------->
+<!-- Login Modal -->
+<div id="loginModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Login</h4>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="emailphone">Email or Phone Number</label>
+            <input type="text" class="form-control" id="emailphone" placeholder="Enter email or phone" required>
+          </div>
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" class="form-control" id="password" placeholder="Enter password" required>
+          </div>
+          <div class="checkbox">
+            <label><input type="checkbox"> Remember me</label>
+          </div>
+          <button type="submit" class="btn btn-success btn-login">Login</button>
+          <div class="extra-links">
+            <a href="" data-toggle="modal" data-target="#regModal">Create Account</a> |
+            <a href="Forget_password_form.html">Forgot Password?</a>
+          </div>
+        </form>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-------------login ses--------------->
+
+
+
+<!------registratin modal start-->
+<!-- Modal -->
+<div id="regModal" class="modal fade registration" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Create Account / Tour Registration</h4>
+      </div>
+
+      <div class="modal-body">
+        <form>
+          <fieldset>
+            <legend>Registration Form</legend>
+
+            <label>Enter Your Name</label>
+            <input type="text" name="name" placeholder="Enter Professional Name" class="form-control" required>
+
+            <label>Email or Phone Number</label>
+            <input type="email" name="email" placeholder="Email or phone number" class="form-control" required>
+
+            <label>Password</label>
+            <input type="password" name="password" placeholder="Enter your password" class="form-control" required>
+
+            <label>Select Your Birth Date</label>
+            <input type="date" name="birthday" class="form-control" required>
+
+            <label>National Identity Number</label>
+            <input type="number" name="nidnumber" placeholder="NID Number" class="form-control" required>
+
+            <label>Enter Your Gender</label>
+            <div class="radio-group ">
+              <label class="radio-inline"><input type="radio" name="Gender" value="Male"> Male</label>
+              <label class="radio-inline"><input type="radio" name="Gender" value="Female"> Female</label>
+            </div>
+
+            <label>Favourite Colour</label>
+            <input type="color" name="color" class="form-control" readonly>
+
+            <label>Upload Your Photo</label>
+            <input type="file" name="photo" class="form-control" required>
+
+            <label>Favourite Hobby</label>
+            <select name="hobby" class="form-control" required>
+              <option value="">Select hobby</option>
+              <option value="Gaming">Gaming</option>
+              <option value="Tour">Tour</option>
+              <option value="Studying">Studying</option>
+            </select>
+
+            <button type="submit" class="btn btn-success">Submit</button>
+          </fieldset>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+</html>
